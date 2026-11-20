@@ -1,0 +1,119 @@
+:root {
+  --color-primary: #0f4c81; /* en-tête, bouton, focus */
+  --color-bg: #f5f7fa; /* fond de la page */
+  --color-surface: #ffffff; /* cartes, formulaire, champs */
+  --color-text: #1a2433; /* texte principal */
+  --color-muted: #5b6576; /* texte secondaire */
+  --color-border: #d9e0e8; /* bordures */
+  --color-error-bg: #fdecec; /* fond du message d'erreur (bonus) */
+  --color-error-text: #b42318; /* texte du message d'erreur (bonus) */
+
+  /* Police de la maquette : Inter (Google Fonts), ou une police système */
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #f5f7fa;
+}
+header {
+    margin-left: -6px;
+    background-color: #0f4c81;
+    color: #ffffff;
+    margin-top: -10px;
+    padding: 3px;
+    width: 100%;
+    h2{
+        margin-left: 7%;
+        font-size: 15px;
+
+    }
+}
+section{
+    margin-left: 7%;
+    h1{
+        font-size: 27px;
+        margin-bottom: 0;
+    }
+    p{
+        font-size : 12px;
+        color:#5b6576;
+        margin-top: 4px;;
+    }
+    .filtre{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20%;
+        background-color: #ffffff;
+        margin-top: 2%;
+        margin-right: 7%;
+        border: 1px solid #d9e0e8;
+        border-radius: 6px;
+        h2{
+            margin-left: 10px;
+            font-size: medium;
+
+        }
+        select{
+            width: 200px;
+            margin-left: 10px;
+            height: 30px;
+            margin-bottom: 15px;
+            margin-right: -100px ;
+        }
+        input{
+            height: 25px;
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        button{
+            color: #ffffff;
+            background-color: #0f4c81;
+            height: 30px;
+            width: 150px;
+            margin-left: -100px;
+            margin-top: 46px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .pays{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        gap:1.5%;
+        article{
+            width: 30%;
+            border: 1px solid #d9e0e8;
+            border-radius: 10px;
+
+            img{
+                width: 100%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            h2{
+                font-size: 16px;
+                padding-left: 10px;
+            }
+            .capital , .Population{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            h3{
+                color: #5b6576;
+                font-size: 12px;
+            }
+            h4{
+                font-size: 12px;
+            }
+        }
+
+        }
+       
+    }
+
+
+}
